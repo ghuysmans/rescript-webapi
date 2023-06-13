@@ -1,0 +1,17 @@
+opam-version: "2.0"
+name: "rescript-webapi"
+version: "0.8.0"
+maintainer: "Patrick Ecker"
+authors: "Tiny Technologies Inc"
+license: "MIT"
+homepage: "https://github.com/tinymce/rescript-webapi.git"
+bug-reports: "https://github.com/tinymce/rescript-webapi/issues"
+dev-repo: "git://github.com/tinymce/rescript-webapi"
+build: [["dune" "build" "-p" name "-j" jobs]]
+synopsis: "Reason / ReScript bindings to DOM"
+depends: [
+  "dune" {>= "3.8"}
+  "melange"
+  "rescript-syntax"
+  "rescript-promise"
+]
